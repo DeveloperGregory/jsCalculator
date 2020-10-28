@@ -1,0 +1,119 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    text-align: center;
+}
+
+input{
+    border-radius: 4px;
+    font-size: 32pt;
+    font-weight: bold;
+    margin: 10px;
+    text-align: right;
+}
+
+.operation, .numpad{
+    border-radius: 4px;
+    font-size: large;
+    font-weight: bold;
+    margin: 5px;
+    height: 80px;
+}
+
+#calc-container{
+    background-color: burlywood;
+    
+    border-radius: 8px;
+    border-style: groove;
+    display: grid;
+    grid-template-areas: 
+    ". display . ."
+    "add sub multi divide"
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero period . equal";
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 10px #888888;
+    width: 40%;
+}
+
+#display-container{
+    grid-area: display;
+    grid-column: 1/5;
+    text-align: center;
+}
+
+#add{
+    grid-area: add;
+}
+
+#subtract{
+    grid-area: sub;
+}
+
+#multiply{
+    grid-area: multi;
+}
+
+#divide{
+    grid-area: divide;
+}
+
+#equals{
+    grid-area: equal;
+    grid-row: 3/7;
+    border-radius: 4px;
+    font-size: large;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#period{
+    grid-area: period;
+}
+
+#one{
+    grid-area: one;   
+}
+
+#two{
+    grid-area: two;    
+}
+
+#three{
+    grid-area: three;    
+}
+
+#four{
+    grid-area: four;    
+}
+
+#five{
+    grid-area: five;    
+}
+
+#six{
+    grid-area: six;    
+}
+
+#seven{
+    grid-area: seven;    
+}
+
+#eight{
+    grid-area: eight;    
+}
+
+#nine{
+    grid-area: nine;    
+}
+
+#zero{
+    grid-area: zero;    
+}
+
