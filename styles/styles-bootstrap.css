@@ -1,0 +1,36 @@
+body{
+    background-color: #499272;
+    font-family: 'Syne Mono', monospace;
+}
+
+.calc-button{
+    font-size: larger;
+    font-weight: bold;
+    height: 100px;
+    margin: 3px;
+    width: 100px;
+}
+
+#calc-container{
+    background-color: #78B494;
+    border-radius: 5px;
+    width: 35%;
+}
+
+#calc-display{
+    font-weight: bold;
+    font-size: 32pt;
+    height: 60px;
+    margin: 3px 0px;
+    text-align: right;
+}
+
+@media (max-width: 1200px){
+    .calc-button{
+        height: 60px;
+        width: 60px;
+    }
+    #calc-container{
+        width: 90%;
+    }
+}
