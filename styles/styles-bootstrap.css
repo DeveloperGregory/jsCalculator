@@ -14,6 +14,8 @@ body{
 #calc-container{
     background-color: #78B494;
     border-radius: 5px;
+    box-shadow: 5px 10px #3d3d3d;
+    padding: 5px;
     width: 35%;
 }
 

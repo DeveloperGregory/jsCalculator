@@ -41,7 +41,11 @@ function oper(op){
     nums[numCount] = displayElem.value;
     numCount = (numCount == 1) ? 0 : 1;
     resetDisplay = true;
-    currentOp = op;
+    if(numCount == 0){
+        solve(false);
+    }else{
+        currentOp = op;
+    }
 }
 
 function solve(fromEquals){
@@ -92,6 +96,9 @@ function handleKeys(e){
         case "Enter":
            solve(true); 
            break;
+        case "Space":
+            clearAll();
+            break;
         default:
             break;
     }
