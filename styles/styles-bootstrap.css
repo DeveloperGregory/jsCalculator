@@ -7,32 +7,46 @@ body{
     font-size: larger;
     font-weight: bold;
     height: 100px;
-    margin: 3px;
-    width: 100px;
+    margin: 0px;
+    width: 105px;
+}
+
+.no-gutter{
+    
+    margin-right: 20px;
+    padding-left: 0px;
+    padding-right:0px;
+}
+
+.no-padding{
+    padding-left: 0px;
+    padding-right:0px;   
 }
 
 #calc-container{
     background-color: #78B494;
     border-radius: 5px;
     box-shadow: 5px 10px #3d3d3d;
-    padding: 5px;
-    width: 35%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 450px;
 }
 
 #calc-display{
     font-weight: bold;
     font-size: 32pt;
     height: 60px;
-    margin: 3px 0px;
+    margin: 5px 0px;
     text-align: right;
 }
 
-@media (max-width: 1200px){
+#zero, #all-clear{
+    width: 215px;
+}
+
+@media (max-width: 600px){
     .calc-button{
-        height: 60px;
-        width: 60px;
-    }
-    #calc-container{
-        width: 90%;
+        height: 80px;
+        width: 100px;
     }
 }
